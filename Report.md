@@ -1,3 +1,6 @@
+[//]: # (Image References)
+
+[image1]: https://github.com/dariocazzani/banaNavigation/blob/master/images/DQN-equation.png
 # Report
 
 ## Learning Algorithm
@@ -32,7 +35,7 @@ Because target values are also a function of the Deep Neural Net, in order to av
 chase a moving targe, we need to use a **fixed target** for updating the algorithm.
 The solution is to use the same parameters of the Deep Neural Net for a few update steps.
 
-[Equation]
+![DQN-equation][image1]
 
 ### Hyperparameters
 * Epsilon-greedy policy: at training time it's important to find the right balance
