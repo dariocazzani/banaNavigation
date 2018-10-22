@@ -36,19 +36,20 @@ The solution is to use the same parameters of the Deep Neural Net for a few upda
 
 ### Hyperparameters
 * Epsilon-greedy policy: at training time it's important to find the right balance
-between exploration and exploitation.
-**Exploration** is intended as the ability of the agent to try different actions in
-the same states and potentially discover a better policy than the current one.
-**Exploitation** is intended as the need for the agent to maximize the return, therefore
+between exploration and exploitation. </br>
+   * **Exploration** is intended as the ability of the agent to try different actions in
+the same states and potentially discover a better policy than the current one. </br>
+   * **Exploitation** is intended as the need for the agent to maximize the return, therefore
 choosing the actions that lead to the maximum reward based on the current estimated policy.
-Instead of letting the agent choosing the action with the maximum expected return,
-we let it choose a random action with probability **epsilon**.
-At first epsilon is initialized to `1.0`, with a decay factor of `0.995` and capped
-to a minimum of `0.01`
+
+   Instead of letting the agent choosing the action with the maximum expected return,
+   we let it choose a random action with probability **epsilon**.
+   At first epsilon is initialized to `1.0`, with a decay factor of `0.995` and capped
+   to a minimum of `0.01`
 
 * Discout Factor Gamma: Because future rewards are less predictable, it makes sense
 for the agent to value immediate rewards more than future ones.
-The choice for the **Discout Factor** gamma is of `0.99`
+The choice for the **Discount Factor** gamma is of `0.99`
 
 * Other hyperparameters:
     * `BUFFER_SIZE = int(1e5)  # replay buffer size`
