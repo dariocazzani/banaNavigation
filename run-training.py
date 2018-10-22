@@ -22,8 +22,8 @@ def dqn(agent, env, brain_name):
 
     Params
     ======
-        - agent:
-        - env:
+        - agent
+        - env
         - brain_name
     """
 

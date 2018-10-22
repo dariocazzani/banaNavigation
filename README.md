@@ -2,9 +2,9 @@
 
 [image1]: https://user-images.githubusercontent.com/10624937/42135619-d90f2f28-7d12-11e8-8823-82b970a54d7e.gif "Trained Agent"
 
-# Project 1: Navigation
+# Project Navigation
 
-### Introduction
+## Introduction
 
 For this project, you will train an agent to navigate (and collect bananas!) in a large, square world.  
 
@@ -20,14 +20,14 @@ The state space has 37 dimensions and contains the agent's velocity, along with 
 
 The task is episodic, and in order to solve the environment, your agent must get an average score of +13 over 100 consecutive episodes.
 
-### Getting Started
+## Getting Started
 
 1. Download the environment the link below (For this project I used Linux)
     - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Linux.zip)
 
 2. Place the file in the root folder of the repo and decompress it.
 
-### Instructions
+## Instructions
 
 #### Install requirements:
 ```
@@ -42,6 +42,8 @@ pip install .
 ```
 python run-training.py
 ```
+
+![Trained Agent][images/scores.png]
 
 #### Watch the smart agent playing
 ```
