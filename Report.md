@@ -79,9 +79,9 @@ The following image shows the average rewards for 100 episodes during training:
 Training each agent takes between 15 to 25 minutes on my
 machine with an Nvidia 1060.
 Because the hyperparameter space is not big, it would be interesting to use
-*Bayesian Optimizers* to find the best combination of hyperparameters that would lead
+**Bayesian Optimizers** to find the best combination of hyperparameters that would lead
 to a high average score in the least amount of time.
-: 
+ 
 * **Double DQN**: Another improvement would be to try to use *Double DQN*. In noisy environment
 the **TD-Target** is usually overestimated. In order to avoid it, a different policy
 is used for value estimation, and another one to select the next action.
