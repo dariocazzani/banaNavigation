@@ -37,7 +37,7 @@ Because target values are also a function of the Deep Neural Net, in order to av
 chase a moving targe, we need to use a **fixed target** for updating the algorithm.
 The solution is to use the same parameters of the Deep Neural Net for a few update steps.
 
-![DQN-equation][image1]
+  ![DQN-equation][image1]
 
 ### Hyperparameters
 * Epsilon-greedy policy: at training time it's important to find the right balance
@@ -70,29 +70,30 @@ The architecture of the neural network is quite simple:
 
 ### Plot of Rewards
 The following image shows the average rewards for 100 episodes during training:
-![Plot][image2]
+    ![Plot][image2]
 
 
 ### Ideas for Future Work
 
-* *Hyperparameters tuning* Training each agent takes between 15 to 25 minutes on my
+* **Hyperparameters tuning**:
+Training each agent takes between 15 to 25 minutes on my
 machine with an Nvidia 1060.
 Because the hyperparameter space is not big, it would be interesting to use
 *Bayesian Optimizers* to find the best combination of hyperparameters that would lead
 to a high average score in the least amount of time.
-
-* Another improvement would be to try to use *Double DQN*. In noisy environment
-the *TD-Target* is usually overestimated. In order to avoid it, a different policy
+: 
+* **Double DQN**: Another improvement would be to try to use *Double DQN*. In noisy environment
+the **TD-Target** is usually overestimated. In order to avoid it, a different policy
 is used for value estimation, and another one to select the next action.
 This can be implemented by training 2 different value functions or by using previous
 values of the parameters of the Deep Neural Net used by the agent.
 
 * There are 2 extra algorithms that could be interested to try:
-    * Prioritized experience replay
-    * Dueling DQN
+    * **Prioritized experience replay**
+    * **Dueling DQN**
 
-* *Avoid sudden turns*: After the agent has learned to collect as many yellow bananas
+* **Avoid sudden turns**: After the agent has learned to collect as many yellow bananas
 as possible, I noticed that the movements can be quite jerky.
-I would like to add a penalty factor to the reward that is proportional to the
-angle of the turn (left or right). My hope is that the agent would learn to navigate
-smoothly in the environment.
+I would like to add a **penalty factor** to the reward that is proportional to the
+angle of the turn (left or right). My hope is that the agent would learn to **navigate
+smoothly** in the environment.
